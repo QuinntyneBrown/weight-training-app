@@ -1,0 +1,49 @@
+
+$day-picker-height:75px;
+$day-font-color:#000;
+$day-font-color-active:#fff;
+$day-background-color:#f2f2f2;
+$day-background-color-active:#797979;
+
+:host {
+    font-family:Arial;
+    color:$day-font-color;
+}
+
+:host > div > div {
+    height:$day-picker-height;
+    width:2250px;    
+}
+
+:host > div > div > div {
+    position:relative;
+    display:inline-block;
+    float:left;
+    width:75px;
+    cursor:pointer;
+    height:$day-picker-height;
+    background-color:$day-background-color;
+    span {
+        text-align:center;
+        display:block;
+    }    
+    margin-left:5px;
+    margin-right:5px;
+}
+
+:host > div > div > div.active {
+    background-color:$day-background-color-active;
+    color:$day-font-color-active;
+}
+
+:host > div > div > div > span:first-child {
+    margin-top:10px;
+    font-weight:800;
+}
+
+:host > div {
+    width: 100%;
+    height: $day-picker-height;
+    overflow: hidden;
+    display:block;
+}

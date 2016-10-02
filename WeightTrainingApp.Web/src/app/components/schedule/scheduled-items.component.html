@@ -1,0 +1,9 @@
+<div class="scheduled-items">
+    <h2>{{ days[_currentIndex].dayOfWeek + ' ' + days[_currentIndex].date }}</h2>
+    <table>
+        <tr *ngFor="let scheduleItem of scheduledItems;let i = index;">
+            <td>{{ scheduleItem.time }}</td>
+            <td>{{ scheduleItem.title }}</td>
+        </tr>
+    </table>
+</div>

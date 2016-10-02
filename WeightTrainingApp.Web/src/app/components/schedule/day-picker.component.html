@@ -1,0 +1,8 @@
+<div (window:resize)="onResize($event)">
+    <div>
+        <div *ngFor="let day of days;let i = index;" (click)="onClick(i)" [ngClass]="{'active': i == _currentIndex }">
+            <span>{{ day.dayOfWeek }}</span>
+            <span>{{ day.date }}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <h1>{{ title }}</h1>
+    <day-picker [days]="days"
+                [currentIndex]="currentIndex" 
+                (onDayPicked)="onDayPicked($event)"></day-picker>
+
+    <scheduled-items [scheduledItems]="scheduledItems"
+                     [days]="days"
+                     [currentIndex]="currentIndex">
+    </scheduled-items>
+</div>
